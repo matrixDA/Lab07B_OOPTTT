@@ -5,8 +5,6 @@ public class TicTacToeGame {
     private static final int ROW = 3;
     private static final int COL = 3;
 
-    private static int numMove = 0;
-
      private static String[][] board = new String[ROW][COL];
 
      public static void clearBoard()

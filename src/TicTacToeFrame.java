@@ -29,7 +29,7 @@ public class TicTacToeFrame extends JFrame
 
     }
 
-    private void createGUI()
+    public void createGUI()
     {
         mainPnl = new JPanel();
         topPnl = new JPanel();
@@ -47,7 +47,7 @@ public class TicTacToeFrame extends JFrame
         createBottomPnl();
 
     }
-    private void createTopPnl()
+    public void createTopPnl()
     {
 
         turn = new JLabel("Current Player: X");
@@ -56,14 +56,14 @@ public class TicTacToeFrame extends JFrame
         topPnl.add(turn);
 
     }
-    private void createGridPnl() {
+    public void createGridPnl() {
         centerPnl.setLayout(new GridLayout(3, 3));
 
         TicTacToeBoard.createGame(centerPnl);
         TicTacToeBoard.onClick(turn);
 
     }
-    private void createBottomPnl()
+    public void createBottomPnl()
     {
         quitBtn = new JButton("Quit");
         quitBtn.setFont(new Font(Font.SERIF, Font.PLAIN, 20));

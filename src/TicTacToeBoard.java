@@ -56,10 +56,16 @@ public class TicTacToeBoard {
                             TicTacToeGame.updateGame(String.valueOf(TicTacToeBoard.player), player.getRow(), player.getCol());
 
                             numMove++;
-
                             updatePlayer(game);
-                            winGame(game);
-                            tieGame();
+
+                            if (numMove >= 5)
+                            {
+                                winGame(game);
+                            }
+                            if (numMove >= 7)
+                            {
+                                tieGame();
+                            }
                         }
                     }
                 });
